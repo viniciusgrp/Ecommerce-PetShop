@@ -1,0 +1,1 @@
+Projeto de um e-commerce de pet shop feito com HTML, CSS e JavaScript Vanilla

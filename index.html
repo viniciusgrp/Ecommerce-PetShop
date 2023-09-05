@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="Loja de produtos para répteis, aves e peixes. Compras acima de R$200,00 parcelamos em até 5x sem juros além de frete grátis."
+    />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>GRP Store</title>
+    <link rel="shortcut icon" href="./img/pet-shop.png" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  </head>
+  <body>
+    <header>
+        <div class="logo"><p>GRP Store</p></div>
+        <nav>
+          <ul>
+            <li id="btnTodos">Todos</li>
+            <li id="navAves">Aves</li>
+            <li id="navPeixes">Peixes</li>
+            <li id="navRepteis">Repteis</li>
+          </ul>
+        </nav>
+    </header>
+     <main class="container">
+      <section class="corpo">
+        <aside>
+          <div class="barraPesquisa">
+            <input
+              type="search"
+              name="pesquisa"
+              id="inputPesquisa"
+              placeholder="Digite aqui sua pesquisa"
+            />
+            <button id="btnPesquisar">Pesquisar</button>
+          </div>
+          <div class="ordem">
+            <select name="ordenar" id="ordenar">
+              <option value="">Ordenar</option>
+              <option value="menorValor">Menor valor</option>
+              <option value="maiorValor">Maior valor</option>
+              <option value="alfabetico">Nome A-Z</option>
+              <option value="alfabeticoReverse">Nome Z-A</option>
+            </select>
+          </div>
+          <div id="carro" class="carrinho">
+            <header id="headerCarro"><span class="tituloCarro">Carrinho de compras</span></header>
+            <div id="produtosCarrinho" class="produtosCarrinho"></div>
+            <div id="rodape"></div>
+          </div>
+        </aside>
+        <section class="produtos"></section>
+      </section>
+    </main>
+
+    <script src="./js/database.js"></script>
+    <script src="./js/index.js"></script>
+  </body>
+</html>
